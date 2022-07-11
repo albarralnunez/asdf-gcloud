@@ -6,7 +6,8 @@ current_script_path="${BASH_SOURCE[0]}"
 plugin_dir="$(dirname "$(dirname "$current_script_path")")"
 
 # shellcheck source=../lib/utils.bash
-source "${plugin_dir}/lib/utils.bash"
+# source "${plugin_dir}/lib/utils.bash"
+source ../lib/utils.bash"
 
 if [[ ! -x "$(command -v python)" ]]; then
 	log_failure_and_exit "Python not found and is required for gcloud. Might I suggest https://github.com/danhper/asdf-python"
